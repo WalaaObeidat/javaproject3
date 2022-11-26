@@ -1,28 +1,83 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Tracker</title>
-    <link rel="icon" href="https://genesisppg.com/wp-content/uploads/GPPG_Icon_TimeAndAttendance.png" type="image/icon type">
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/387212a066.js" crossorigin="anonymous"></script>
+    <title>Drinkit</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="welcome">    
-        <img class="logo" src="./img/logo2.png" alt="logo">
-    </div>
-    <div class="flex">
-        <div class="text">
-            <h1>Welcome to AT</h1>
-            <p>We're happy to bring to you our new attendance tracking system only to make our dear trainers and teachers job easier keeping track of their students attendance saving them time and effort.</p>
-            <div class="anckor">
-                <a href="./registration/regestration.html">Sign up</a>
-                <a href="./login/login.html">Log in</a>
+    <!--navbar-->
+    <header>  
+        
+        <div class="continer">  
+       <img class="logo" src="Untitled design (1).png" alt="logo">                
+     <nav >
+     <ul>
+     <li><a class="active" href="#home">Home</a></li>
+     <li> <a href="#about"> Order </a></li>
+   <li><a href="#contact">contact</a></li>
+ </ul>
+</nav>
+</div>  
+</header>
+<!-- home page -->
+<section class="home" id="home">
+    <h1 >Welcome to Drinkit</h1>
+    <div class="wow-right">
+        <div class="photo-border">
+            <div class="photo-container">
+                <img class="photo" src="c7427355878500d5235545cb9d6a7054.png" alt="">
             </div>
         </div>
-        <img width="400px" class="welcome" src="./img/welcome.png" alt="welcome">
     </div>
+    <p class="prg"> Hydration is a key to be energized and healthy.  Many do not realize<br> the importance of drinking water during hot temperatures. 
+        Doctors <br>and health experts encourage keep being hydrated during the summer months<br>.With warmer temperatures,
+         a lot of water and electrolytes aredepleted with<br>  perspiration and  we need to replace the water you lose to avoid dehydration and<br>  drink enough throughout the day.</p>
+   <!-- <span><a target="_blank" class="btn btn-warning align" download="log in " href=""> log in</a></span> 
+    <a target="_blank" class="btn btn-warning align" download="log in " href=""> sign up </a> -->
+    <div>
+
+
+
+      
+
+   <button onclick="toSignUp()" id="btnreg"> <span></span>Sign up<a href="./registration/regestration.html"></a></button>
+   <button onclick="toSignIn()" id="btnreg"> <span></span>log in<a href="./login/login.html"></a></button>
+        
+        <br>
+    
+    </div>
+  </section>
+  <!-- footar -->
+  <footer>
+    <img class="log" src="Untitled design (1).png" alt="logo">  
+    <div class="icon">
+    <i class="fa-brands icon fa-square-twitter"></i>
+    <i class="fa-brands icon fa-square-facebook"></i>
+    <i class="fa-brands icon fa-square-instagram"></i>
+</div>
+<!-- <div>
+    <i class="fa-solid fa-phone"></i>
+    <p class=" mobile">+962 778080942 </p>
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="addd"> Amman,Jordan </p>
+          </div> -->
+  </footer>
+  <script>
+    function toSignUp() {
+        window.location.href = './registration/regestration.html'
+    }
+    function toSignIn() {
+        window.location.href = './login/login.html'
+    }
+        function toContinue(){
+        window.location.href = './login/login.html' 
+    }
+    </script>
 </body>
 </html>

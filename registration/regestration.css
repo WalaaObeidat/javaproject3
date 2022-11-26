@@ -1,11 +1,9 @@
 :root{
-    --bgcolor-3:rgb(237, 236, 236);
-    --primaryColor: #F1EFDC;
-    --secondaryColor:#42032C;
-    --bgcolor-1:#ffffff;
-    --brcolor-2:black;
+    --beige:#ebe2ab;
+    --bgcolor-1:rgb(255, 255, 255);
+    --brcolor-2:#0D1D68;
    }
-
+  
 /* ===== Google Font Import - Poformsins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
@@ -20,14 +18,41 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondaryColor);
+    background-color: var(--bgcolor-1);
+}
+
+ .log{
+    float: right; 
+ position: relative;
+bottom: 8cm;
+right:1cm;
+height: 3cm;
+
+} 
+.pho1{
+    display: inline-block;
+    width: 10cm;
+    height: 12cm;
+    position: relative;
+    right: 3cm;
+   top: 1cm;
+  
+}
+.pho2{
+    display: inline-block;
+    width: 12cm;
+    height: 12cm;
+    position: relative;
+    left: 12cm;
+    top: 2cm;
 }
 
 .cont{
     position: relative;
+    right: 12cm;
     max-width: 460px;
     width: 100%;
-    background: var(--bgcolor-1);
+    background: var(--brcolor-2);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -46,7 +71,7 @@ body{
 .cont .form{
     width: 50%;
     padding: 30px;
-    background-color: var(--bgcolor-1);
+    background-color: var(--brcolor-2);
     transition: margin-left 0.18s ease;
 }
 
@@ -57,6 +82,7 @@ body{
     position: relative;
     font-size: 27px;
     font-weight: 600;
+    color: var(--bgcolor-1);
 }
 
 .form .title::before{
@@ -66,7 +92,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 30px;
-    background-color: var(--secondaryColor);
+    background-color: var(--bgcolor-1);
     border-radius: 25px;
 }
 
@@ -78,7 +104,7 @@ body{
 }
 
 .input-field input{
-    position: absolute;
+    
     height: 100%;
     width: 100%;
     padding: 0 35px;
@@ -91,20 +117,20 @@ body{
 }
 
 .input-field input:is(:focus, :valid){
-    border-bottom-color: var(--secondaryColor);
+    border-bottom-color: var(--brcolor-2);
 }
 
 .input-field i{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--secondaryColor);
+    color: var(--brcolor-2);
     font-size: 23px;
     transition: all 0.2s ease;
 }
 
 .input-field input:is(:focus, :valid) ~ i{
-    color: var(--secondaryColor);
+    color:var(--bgcolor-1);
 }
 
 .input-field i.icon{
@@ -116,8 +142,11 @@ body{
     padding: 10px;
 }
 
+.text{
+    color: var(--bgcolor-1);
+}
 .form a.text{
-    color: var(--secondaryColor);
+    color: var(--bgcolor-1);
     text-decoration: none;
 }
 .form a:hover{
@@ -130,12 +159,12 @@ body{
 
 .form button {
     border: none;
-    color: #fff;
+    color:var(--brcolor-2);
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 6px;
-    background-color: var(--secondaryColor);
+    background-color: var(--bgcolor-1);
     cursor: pointer;
     transition: all 0.3s ease;
     width: 270px;
@@ -151,3 +180,5 @@ body{
     text-align: center;
     width: 180px;
 }
+
+ */

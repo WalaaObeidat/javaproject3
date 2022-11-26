@@ -1,52 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/387212a066.js" crossorigin="anonymous"></script>
     <title>Regestration</title>
-    <link rel="icon" href="https://genesisppg.com/wp-content/uploads/GPPG_Icon_TimeAndAttendance.png" type="image/icon type">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
     <link rel="stylesheet" href="./regestration.css">
          
 </head>
 <body>
+   <img class="log" src="Untitled design (1).png" alt="logo">  
+   <div>
+      <img class="pho1" src="tequila-sunrise-1649952120-removebg-preview (1).png" alt=""></div>
+      <div>
+         <img class="pho2" src="Pink-Drink-11-2-removebg-preview.png" alt=""></div>
     <div class="cont">
         <div class="forms">
             <div class="form signup">
                 <span class="title">Registration</span>   
-    <form id="form" action="#">
+    <form id="form" action="#" >
 
         <div class="input-field">
             <input type="text" placeholder="Enter your name" id="fname" required>
-            <i class="uil uil-user"></i>
+            <span id="fnameerror" class="text-danger font-weight-bold"></span>
+            <i class="uil uil-user icon"></i>
         </div>
 
         <div class="input-field">
             <input type="number" placeholder="Enter your number"  id="num" required>
-            <i class=" uil-mobile-android-alt"></i>
+            <span id="numerror" class="text-danger font-weight-bold"></span>
+            <i class=" uil-mobile-android-alt icon"></i>
         </div>
 
         <div class="input-field">
             <input type="email" placeholder="Enter your email"  id="email" required>
+            <span id="mail" class="text-danger font-weight-bold"></span>
             <i class="uil uil-envelope icon"></i>
         </div>
 
 
         <div class="input-field">
             <input type="password" class="password" placeholder="Create a password"  id="password" required>
+            <span id="pass" class="text-danger font-weight-bold"></span>
             <i class="uil uil-lock icon"></i>
         </div>
         <div class="input-field">
             <input type="password" class="password" placeholder="Confirm a password" id="conPass"required>
+            <span id="conpass" class="text-danger font-weight-bold"></span>
             <i class="uil uil-lock icon"></i>
-            <i class="uil uil-eye-slash showHidePw"></i>
+           
         </div>
 
 
         <div class="input-field button">
-        <button type="submit">Sign up</button>
+        <button type="submit" onclick="logSubmit()">Sign up</button>
         </div>
     </form>
 
@@ -61,8 +70,10 @@
       </div>
     </div>
 
-    <script src="./regestration.js">
-       
-    </script>
+    <script src="./regestration.js"></script>
 </body>
 </html>
+
+
+
+

@@ -1,57 +1,203 @@
 :root{
-    --beige:#FFD8A9;
-    --primaryColor:#ffffff;
-    --secondaryColor:#5c1444;
+    --beige:#ebe2ab;
     --bgcolor-1:rgb(255, 255, 255);
-    --brcolor-2:black;
+    --brcolor-2:#0D1D68;
    }
 
 *{
     margin: 0;
     padding: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
  
 body{
-    background-color: var(--primaryColor);
+    background-color: var(--bgcolor-1);
+
+}
+/* navbar */
+.continer{
+    z-index: 999;
+     position: fixed;
+     background:var(--brcolor-2);
+     display: flex;
+     width: 100%;
+     background-position: center;
+     left: 0; 
+    
+     
+   }
+   nav{
+     width: 100%;
+    margin-left: 820px;
+     /* align-items: center; */
+     margin-top: 12px;
+    
+     
+   
+   }
+   
+   nav ul li{
+   list-style-type: none;
+   display: inline-block;
+   padding: 5px  3px;
+   margin-bottom: 15;
+   
+   
+   }
+   
+   nav ul li a{
+     color:white;
+     text-decoration: none;
+     font-weight: bold;
+     text-transform: capitalize;
+     display: inline-block;
+     margin-left: 20px ;
+     position: relative;
+     left: 9cm;
+
+     
+   }
+   nav ul li a:hover{
+     color:var(--beige);
+     transform: scale(1.1);
+     transition: .5s;
+   } 
+   .logo{
+    width: 85px;
+    margin-left:20px;
+    height: 60px;
+   
+    color: white;
+   }
+
+  /* welcome */
+
+  .home{
+    display:inline-block;
+    padding: 80px 10px;
+  
+  }
+  .photo {
+    /* width:42%; */
+    margin-left: 20cm;
+   
+   
+  }
+    h1{
+      color: var(--brcolor-2);
+     padding-left: 150px;
+     position: relative;
+      top: 4cm;
+     font-size:50px ;
+    
+    }
+    .prg{
+        color:var(--brcolor-2);
+          padding-right:17cm;
+          position: relative;
+          bottom: 180px;
+          font-size:20px;
+          text-align: center;
+          
+       }
+        
+       button{
+        box-shadow: 5px 5px 5px 5px var(--brcolor-2);
+        width: 130px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 15px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid var(--brcolor-2);
+        background: transparent;
+        color: var(--brcolor-2);
+        position: relative;
+        left: 5cm;
+        bottom: 4cm;
+        
+        }
+      span{
+        background:var(--beige);
+        height: 100%;
+        width: 0px; 
+        border-radius: 25px;
+        position: absolute;
+         left: 0;
+         bottom: 0; 
+        z-index: -1;
+        transition: 0.5s;
+    
+    }   
+    button:hover span{
+        width: 100%;
+    }
+    button:hover{
+        border: none;
+    }  
+    
+    /* footar */
+    footer {
+        text-align: center;
+        padding: 3px;
+        background-color:var(--brcolor-2);
+        color: white;
+       height: 2cm;
+      }
+.log{
+    width: 2cm;
+    position: relative;
+   left: 2cm;
+
+}
+.icon{
+    display: inline-block;
+    color: var(--beige);
+ padding-right:3vh;
+    position: relative;
+    left:6cm;
+   bottom: 1vh;
+    
 }
 
-.logo{
-    display: block;
-    width: 10%;
-    margin: 3%;
-}
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-    margin: 0 auto;
-}
-.welcome{
-    display: block;
-    width: 90%;
-}
 
-.flex div h1{
-    color: var(--secondaryColor);
-    font-weight: 700;
-}
-.flex div p{
-    color: var(--secondaryColor);
-}
-.anckor{
-    margin-top: 7%;
-}
-a{
-    text-decoration: none;
-    background-color:#5c1444;
-    padding: 2%;
-    color: var(--primaryColor);
-    border-radius: 10%;
-}
+/* .fa-phone{
+    color:var(--beige);
+position: relative;
+right: 15cm;
+bottom: 8vh;
+  }
+  .mobile{
+    position: relative;
+    right: 13cm;
+    bottom: 10vh;
+   color: #e7d879;
+  }
+  .fa-location-dot{
+  color:var(--beige);
+  position: relative;
+ right: 15cm;
+ bottom: 9vh;
+  }
+  .addd{
+    position: relative;
+    right: 13cm;
+    bottom: 11vh;
+color: #e7d879;
 
-@media(max-width: 700px){
+  } */
+
+
+
+
+
+
+
+
+
+
+/* @media(max-width: 700px){
     .flex{
         flex-direction: column-reverse;
         height: 60vh;
@@ -59,4 +205,4 @@ a{
 }
       
    
-
+ */
